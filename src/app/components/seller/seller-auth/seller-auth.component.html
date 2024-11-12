@@ -1,0 +1,62 @@
+<div class="seller-auth">
+  <div *ngIf="!showLogin" class="sign-up">
+    <h1>Cadastrar Vendedor</h1>
+    <form
+      #sellerSignUp="ngForm"
+      (ngSubmit)="signUp(sellerSignUp.value)"
+      class="comom-form"
+    >
+      <input
+        class="form-input"
+        type="text"
+        ngModel
+        name="name"
+        placeholder="Digite seu nome"
+      />
+      <input
+        class="form-input"
+        type="email"
+        ngModel
+        name="email"
+        placeholder="Digite seu email"
+      />
+      <input
+        class="form-input"
+        type="password"
+        ngModel
+        name="password"
+        placeholder="Digite sua senha"
+      />
+      <button class="form-button">Cadastrar</button>
+      <a (click)="openLogin()">JÁ E CADASTRADO? - <span>CLIQUE AQUI</span> PARA ACESSAR!</a>
+    </form>
+  </div>
+</div>
+
+<div *ngIf="showLogin" class="login">
+  <h1>Login de Vendedores</h1>
+  <p class="error">{{ authError }}</p>
+  <form
+    #sellerLogin="ngForm"
+    (ngSubmit)="login(sellerLogin.value)"
+    class="comom-form"
+  >
+    <input
+      class="form-input"
+      type="email"
+      ngModel
+      name="email"
+      placeholder="Digite seu email"
+    />
+    <input
+      class="form-input"
+      type="password"
+      ngModel
+      name="password"
+      placeholder="Digite sua senha"
+    />
+    <button class="form-button">Login</button>
+    <a (click)="openSignUp()">AINDA NÃO E CADASTRADO? - <span>CLIQUE AQUI</span> PARA CADASTRAR!</a>
+  </form>
+  <p *ngIf="successMessage">{{ successMessage }}</p> 
+</div>

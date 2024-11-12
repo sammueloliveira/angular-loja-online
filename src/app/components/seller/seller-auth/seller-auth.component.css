@@ -1,0 +1,37 @@
+.sign-up{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: teal;
+}
+
+.sign-up a{
+    margin-top: 15px;
+    cursor: pointer;
+    color: black;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.sign-up a span{
+   text-decoration: underline;
+}
+
+.login{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: teal;
+}
+
+.login a{
+    margin-top: 15px;
+    cursor: pointer;
+    color: black;
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.login a span{
+   text-decoration: underline;
+}

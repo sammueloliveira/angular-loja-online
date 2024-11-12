@@ -1,0 +1,94 @@
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .details {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #e67e22;
+    margin-bottom: 15px;
+  }
+  
+  .color {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  h6 {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .quantity-group {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .quantity-group button {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .quantity-group button:hover {
+    background-color: #2980b9;
+  }
+  
+  .quantity-group input {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 5px;
+  }
+  
